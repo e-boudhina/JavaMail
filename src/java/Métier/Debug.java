@@ -115,7 +115,7 @@ public class Debug {
         try {
             MimeMessage message = new MimeMessage(session);
             //System.err.println("ok2");
-            message.setFrom(new InternetAddress("yourpwd"));
+            message.setFrom(new InternetAddress("email"));
             System.out.println("ok3");
             message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("testemail"));
             message.setSubject("Next Month Form Sessions :");
