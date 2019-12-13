@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Add_Abonne_Servlet</servlet-name>
+        <servlet-class>Web.Add_Abonne_Servlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Add_SessionForm_Servlet</servlet-name>
+        <servlet-class>Web.Add_SessionForm_Servlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Notifier_Abonne_Servlet</servlet-name>
+        <servlet-class>Web.Notifier_Abonne_Servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Add_Abonne_Servlet</servlet-name>
+        <url-pattern>/Add_Abonne_Servlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Add_SessionForm_Servlet</servlet-name>
+        <url-pattern>/Add_SessionForm_Servlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Notifier_Abonne_Servlet</servlet-name>
+        <url-pattern>/Notifier_Abonne_Servlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>MainPage.jsp</welcome-file>
+    </welcome-file-list>
+    
+</web-app>
